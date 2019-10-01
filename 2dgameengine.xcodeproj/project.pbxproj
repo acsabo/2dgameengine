@@ -291,9 +291,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
-					"/usr/local/opt/sdl2_image/include/**",
-					"/usr/local/opt/sdl2/include/**",
-					"/usr/local/opt/sdl2_ttf/include/**",
+					/usr/local/opt/sdl2_image/include,
+					/usr/local/opt/sdl2/include,
+					/usr/local/opt/sdl2_ttf/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/usr/local/opt/sdl2/lib/**",
@@ -314,9 +314,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
-					"/usr/local/opt/sdl2_image/include/**",
-					"/usr/local/opt/sdl2/include/**",
-					"/usr/local/opt/sdl2_ttf/include/**",
+					/usr/local/opt/sdl2_image/include,
+					/usr/local/opt/sdl2/include,
+					/usr/local/opt/sdl2_ttf/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/usr/local/opt/sdl2/lib/**",
