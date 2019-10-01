@@ -1,13 +1,5 @@
-//
-//  Game.hpp
-//  2dgameengine
-//
-//  Created by Adriano Sabo on 30/09/19.
-//  Copyright © 2019 Adriano Sabo. All rights reserved.
-//
-
-#ifndef Game_h
-#define Game_h
+#ifndef GAME_H
+#define GAME_H
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -21,6 +13,7 @@ private:
 public:
     Game();
     ~Game();
+    int ticksLastFrame = 0;
     bool IsRunning() const;
     void Initialize(int width, int height);
     void ProcessInput();
@@ -29,4 +22,4 @@ public:
     void Destroy();
 };
 
-#endif /* Game_hpp */
+#endif

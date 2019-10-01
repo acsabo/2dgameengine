@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3120B96C23441A800013F4D8 /* liblua.5.3.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B96B23441A800013F4D8 /* liblua.5.3.5.dylib */; };
+		3120B96E23441A9F0013F4D8 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B96D23441A9F0013F4D8 /* libSDL2-2.0.0.dylib */; };
+		3120B97023441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B96F23441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib */; };
+		3120B97223441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B97123441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib */; };
+		3120B97423441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B97323441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib */; };
 		3151DA5C2342DEC60017F17E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA5B2342DEC60017F17E /* main.cpp */; };
 		3151DA632342E0680017F17E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA622342E0680017F17E /* Makefile */; };
 		3151DA662342E7D10017F17E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA642342E7D10017F17E /* Game.cpp */; };
@@ -25,6 +30,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3120B961234419D30013F4D8 /* 2.0.5 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2.0.5; path = ../../../../usr/local/Cellar/sdl2_image/2.0.5; sourceTree = "<group>"; };
+		3120B962234419D30013F4D8 /* 2.0.15 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2.0.15; path = ../../../../usr/local/Cellar/sdl2_ttf/2.0.15; sourceTree = "<group>"; };
+		3120B963234419D30013F4D8 /* 5.3.5_1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 5.3.5_1; path = ../../../../usr/local/Cellar/lua/5.3.5_1; sourceTree = "<group>"; };
+		3120B964234419D30013F4D8 /* 2.0.10 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2.0.10; path = ../../../../usr/local/Cellar/sdl2/2.0.10; sourceTree = "<group>"; };
+		3120B965234419D30013F4D8 /* 2.0.4 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2.0.4; path = ../../../../usr/local/Cellar/sdl2_mixer/2.0.4; sourceTree = "<group>"; };
+		3120B96B23441A800013F4D8 /* liblua.5.3.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblua.5.3.5.dylib; path = ../../../../usr/local/Cellar/lua/5.3.5_1/lib/liblua.5.3.5.dylib; sourceTree = "<group>"; };
+		3120B96D23441A9F0013F4D8 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2/2.0.10/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		3120B96F23441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
+		3120B97123441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_mixer/2.0.4/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
+		3120B97323441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_ttf/2.0.15/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
 		3151DA582342DEC60017F17E /* 2dgameengine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2dgameengine; sourceTree = BUILT_PRODUCTS_DIR; };
 		3151DA5B2342DEC60017F17E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3151DA622342E0680017F17E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -38,18 +53,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3120B97423441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib in Frameworks */,
+				3120B97223441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib in Frameworks */,
+				3120B97023441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib in Frameworks */,
+				3120B96E23441A9F0013F4D8 /* libSDL2-2.0.0.dylib in Frameworks */,
+				3120B96C23441A800013F4D8 /* liblua.5.3.5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3120B960234419D20013F4D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3120B97323441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib */,
+				3120B97123441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib */,
+				3120B96F23441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib */,
+				3120B96D23441A9F0013F4D8 /* libSDL2-2.0.0.dylib */,
+				3120B96B23441A800013F4D8 /* liblua.5.3.5.dylib */,
+				3120B965234419D30013F4D8 /* 2.0.4 */,
+				3120B961234419D30013F4D8 /* 2.0.5 */,
+				3120B964234419D30013F4D8 /* 2.0.10 */,
+				3120B962234419D30013F4D8 /* 2.0.15 */,
+				3120B963234419D30013F4D8 /* 5.3.5_1 */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3151DA4F2342DEC60017F17E = {
 			isa = PBXGroup;
 			children = (
 				3151DA622342E0680017F17E /* Makefile */,
 				3151DA5A2342DEC60017F17E /* src */,
 				3151DA592342DEC60017F17E /* Products */,
+				3120B960234419D20013F4D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +290,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/opt/sdl2_image/include/**",
+					"/usr/local/opt/sdl2/include/**",
+					"/usr/local/opt/sdl2_ttf/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/opt/sdl2/lib/**",
+					"/usr/local/opt/sdl2_ttf/lib/**",
+					"/usr/local/opt/sdl2_image/lib/**",
+					/usr/local/Cellar/lua/5.3.5_1/lib,
+					/usr/local/Cellar/sdl2/2.0.10/lib,
+					/usr/local/Cellar/sdl2_image/2.0.5/lib,
+					/usr/local/Cellar/sdl2_mixer/2.0.4/lib,
+					/usr/local/Cellar/sdl2_ttf/2.0.15/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -260,6 +313,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/opt/sdl2_image/include/**",
+					"/usr/local/opt/sdl2/include/**",
+					"/usr/local/opt/sdl2_ttf/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/opt/sdl2/lib/**",
+					"/usr/local/opt/sdl2_ttf/lib/**",
+					"/usr/local/opt/sdl2_image/lib/**",
+					/usr/local/Cellar/lua/5.3.5_1/lib,
+					/usr/local/Cellar/sdl2/2.0.10/lib,
+					/usr/local/Cellar/sdl2_image/2.0.5/lib,
+					/usr/local/Cellar/sdl2_mixer/2.0.4/lib,
+					/usr/local/Cellar/sdl2_ttf/2.0.15/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
