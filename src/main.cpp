@@ -6,10 +6,21 @@
 //  Copyright © 2019 Adriano Sabo. All rights reserved.
 //
 
-#include <iostream>
+#include "Constants.h"
+#include "Game.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n" << std::endl;
+    Game *game = new Game();
+    
+    game->Initialize(WINDOW_WIDTH, WINDOW_HEIGHT);
+    
+    while (game->IsRunning()) {
+        game->ProcessInput();
+        game->Update();
+        game->Render();
+    }
+    
+    game->Destroy();
+    
     return 0;
 }

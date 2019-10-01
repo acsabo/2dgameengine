@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3151DA5C2342DEC60017F17E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA5B2342DEC60017F17E /* main.cpp */; };
 		3151DA632342E0680017F17E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA622342E0680017F17E /* Makefile */; };
+		3151DA662342E7D10017F17E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA642342E7D10017F17E /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,9 @@
 		3151DA582342DEC60017F17E /* 2dgameengine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2dgameengine; sourceTree = BUILT_PRODUCTS_DIR; };
 		3151DA5B2342DEC60017F17E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3151DA622342E0680017F17E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3151DA642342E7D10017F17E /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		3151DA652342E7D10017F17E /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		3151DA672342E84B0017F17E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				3151DA5B2342DEC60017F17E /* main.cpp */,
+				3151DA642342E7D10017F17E /* Game.cpp */,
+				3151DA652342E7D10017F17E /* Game.h */,
+				3151DA672342E84B0017F17E /* Constants.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3151DA662342E7D10017F17E /* Game.cpp in Sources */,
 				3151DA632342E0680017F17E /* Makefile in Sources */,
 				3151DA5C2342DEC60017F17E /* main.cpp in Sources */,
 			);
