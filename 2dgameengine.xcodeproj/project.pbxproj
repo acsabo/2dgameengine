@@ -12,6 +12,8 @@
 		3120B97023441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B96F23441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib */; };
 		3120B97223441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B97123441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib */; };
 		3120B97423441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120B97323441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib */; };
+		3120B977234426BC0013F4D8 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3120B975234426BC0013F4D8 /* Entity.cpp */; };
+		3120B97A234426ED0013F4D8 /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3120B978234426ED0013F4D8 /* EntityManager.cpp */; };
 		3151DA5C2342DEC60017F17E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA5B2342DEC60017F17E /* main.cpp */; };
 		3151DA632342E0680017F17E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA622342E0680017F17E /* Makefile */; };
 		3151DA662342E7D10017F17E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA642342E7D10017F17E /* Game.cpp */; };
@@ -40,6 +42,12 @@
 		3120B96F23441AAE0013F4D8 /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
 		3120B97123441ABD0013F4D8 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_mixer/2.0.4/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
 		3120B97323441AD00013F4D8 /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_ttf/2.0.15/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
+		3120B975234426BC0013F4D8 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		3120B976234426BC0013F4D8 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		3120B978234426ED0013F4D8 /* EntityManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EntityManager.cpp; sourceTree = "<group>"; };
+		3120B979234426ED0013F4D8 /* EntityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
+		3120B97C234428080013F4D8 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		3120B980234434E40013F4D8 /* TransformComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformComponent.h; sourceTree = "<group>"; };
 		3151DA582342DEC60017F17E /* 2dgameengine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2dgameengine; sourceTree = BUILT_PRODUCTS_DIR; };
 		3151DA5B2342DEC60017F17E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3151DA622342E0680017F17E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -81,6 +89,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3120B97E234434CB0013F4D8 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				3120B980234434E40013F4D8 /* TransformComponent.h */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		3151DA4F2342DEC60017F17E = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +118,16 @@
 		3151DA5A2342DEC60017F17E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				3120B97E234434CB0013F4D8 /* components */,
 				3151DA5B2342DEC60017F17E /* main.cpp */,
 				3151DA642342E7D10017F17E /* Game.cpp */,
 				3151DA652342E7D10017F17E /* Game.h */,
 				3151DA672342E84B0017F17E /* Constants.h */,
+				3120B975234426BC0013F4D8 /* Entity.cpp */,
+				3120B976234426BC0013F4D8 /* Entity.h */,
+				3120B978234426ED0013F4D8 /* EntityManager.cpp */,
+				3120B979234426ED0013F4D8 /* EntityManager.h */,
+				3120B97C234428080013F4D8 /* Component.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -166,8 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3120B977234426BC0013F4D8 /* Entity.cpp in Sources */,
 				3151DA662342E7D10017F17E /* Game.cpp in Sources */,
 				3151DA632342E0680017F17E /* Makefile in Sources */,
+				3120B97A234426ED0013F4D8 /* EntityManager.cpp in Sources */,
 				3151DA5C2342DEC60017F17E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
