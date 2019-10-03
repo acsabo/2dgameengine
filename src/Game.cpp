@@ -1,17 +1,9 @@
-//
-//  Game.cpp
-//  2dgameengine
-//
-//  Created by Adriano Sabo on 30/09/19.
-//  Copyright © 2019 Adriano Sabo. All rights reserved.
-//
-
 #include <iostream>
 #include "./Constants.h"
 #include "./Game.h"
 #include "./AssetManager.h"
-#include "./components/TransformComponent.h"
-#include "./components/SpriteComponent.h"
+#include "./Components/TransformComponent.h"
+#include "./Components/SpriteComponent.h"
 #include "../lib/glm/glm.hpp"
 
 EntityManager manager;
@@ -35,13 +27,13 @@ void Game::Initialize(int width, int height) {
         return;
     }
     window = SDL_CreateWindow(
-                              NULL,
-                              SDL_WINDOWPOS_CENTERED,
-                              SDL_WINDOWPOS_CENTERED,
-                              width,
-                              height,
-                              SDL_WINDOW_BORDERLESS
-                              );
+        NULL,
+        SDL_WINDOWPOS_CENTERED,
+        SDL_WINDOWPOS_CENTERED,
+        width,
+        height,
+        SDL_WINDOW_BORDERLESS
+    );
     if (!window) {
         std::cerr << "Error creating SDL window." << std::endl;
         return;
@@ -51,9 +43,9 @@ void Game::Initialize(int width, int height) {
         std::cerr << "Error creating SDL renderer." << std::endl;
         return;
     }
-    
+
     LoadLevel(0);
-    
+
     isRunning = true;
     return;
 }
@@ -62,10 +54,10 @@ void Game::LoadLevel(int levelNumber) {
     /* Start including new assets to the assetmanager list */
     std::string textureFilePath = "./assets/images/tank-big-right.png";
     assetManager->AddTexture("tank-image", textureFilePath.c_str());
-    
+
     /* Start including entities and also components to them */
     Entity& newEntity(manager.AddEntity("tank"));
-    newEntity.AddComponent<TransformComponent>(40, 40, 20, 20, 32, 32, 1);
+    newEntity.AddComponent<TransformComponent>(0, 0, 20, 20, 32, 32, 1);
     newEntity.AddComponent<SpriteComponent>("tank-image");
 }
 
@@ -91,29 +83,29 @@ void Game::ProcessInput() {
 void Game::Update() {
     // Wait until 16ms has ellapsed since the last frame
     while (!SDL_TICKS_PASSED(SDL_GetTicks(), ticksLastFrame + FRAME_TARGET_TIME));
-    
+
     // Delta time is the difference in ticks from last frame converted to seconds
     float deltaTime = (SDL_GetTicks() - ticksLastFrame) / 1000.0f;
-    
+
     // Clamp deltaTime to a maximum value
     deltaTime = (deltaTime > 0.05f) ? 0.05f : deltaTime;
-    
+
     // Sets the new ticks for the current frame to be used in the next pass
     ticksLastFrame = SDL_GetTicks();
-    
+
     manager.Update(deltaTime);
 }
 
 void Game::Render() {
     SDL_SetRenderDrawColor(renderer, 21, 21, 21, 255);
     SDL_RenderClear(renderer);
-    
+
     if (manager.HasNoEntities()) {
         return;
     }
-    
+
     manager.Render();
-    
+
     SDL_RenderPresent(renderer);
 }
 

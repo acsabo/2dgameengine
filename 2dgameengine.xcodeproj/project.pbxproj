@@ -61,6 +61,7 @@
 		31FA91E12345880B003A7886 /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		31FA91E22345880B003A7886 /* AssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetManager.h; sourceTree = "<group>"; };
 		31FA91E423458EF3003A7886 /* SpriteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteComponent.h; sourceTree = "<group>"; };
+		31FA91E52345A098003A7886 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,18 +97,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3120B97E234434CB0013F4D8 /* components */ = {
+		3120B97E234434CB0013F4D8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				3120B980234434E40013F4D8 /* TransformComponent.h */,
 				31FA91E423458EF3003A7886 /* SpriteComponent.h */,
 			);
-			path = components;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		3151DA4F2342DEC60017F17E = {
 			isa = PBXGroup;
 			children = (
+				31FA91E52345A098003A7886 /* assets */,
 				3151DA622342E0680017F17E /* Makefile */,
 				3151DA5A2342DEC60017F17E /* src */,
 				3151DA592342DEC60017F17E /* Products */,
@@ -126,7 +128,7 @@
 		3151DA5A2342DEC60017F17E /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3120B97E234434CB0013F4D8 /* components */,
+				3120B97E234434CB0013F4D8 /* Components */,
 				3151DA5B2342DEC60017F17E /* main.cpp */,
 				3151DA642342E7D10017F17E /* Game.cpp */,
 				3151DA652342E7D10017F17E /* Game.h */,

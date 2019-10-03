@@ -1,16 +1,8 @@
-//
-//  AssetManager.cpp
-//  2dgameengine
-//
-//  Created by Adriano Sabo on 02/10/19.
-//  Copyright © 2019 Adriano Sabo. All rights reserved.
-//
-
-#include "AssetManager.h"
-
+#include "./AssetManager.h"
+#include "./Components/TransformComponent.h"
 
 AssetManager::AssetManager(EntityManager* manager): manager(manager) {
-    
+
 }
 
 void AssetManager::ClearData() {

@@ -1,12 +1,4 @@
-//
-//  TextureManager.cpp
-//  2dgameengine
-//
-//  Created by Adriano Sabo on 02/10/19.
-//  Copyright © 2019 Adriano Sabo. All rights reserved.
-//
-
-#include "TextureManager.h"
+#include "./TextureManager.h"
 
 SDL_Texture* TextureManager::LoadTexture(const char* fileName) {
     SDL_Surface* surface = IMG_Load(fileName);

@@ -1,11 +1,3 @@
-//
-//  Constants.h
-//  2dgameengine
-//
-//  Created by Adriano Sabo on 01/10/19.
-//  Copyright © 2019 Adriano Sabo. All rights reserved.
-//
-
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 

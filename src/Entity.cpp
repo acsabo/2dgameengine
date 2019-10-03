@@ -1,11 +1,3 @@
-//
-//  Entity.cpp
-//  2dgameengine
-//
-//  Created by Adriano Sabo on 01/10/19.
-//  Copyright © 2019 Adriano Sabo. All rights reserved.
-//
-
 #include <iostream>
 #include "./Entity.h"
 
