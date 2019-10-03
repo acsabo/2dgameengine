@@ -1,5 +1,5 @@
 //
-//  EntityManager.hpp
+//  EntityManager.h
 //  2dgameengine
 //
 //  Created by Adriano Sabo on 01/10/19.
@@ -9,9 +9,9 @@
 #ifndef EntityManager_h
 #define EntityManager_h
 
+#include "./Entity.h"
+#include "./Component.h"
 #include <vector>
-#include "Entity.h"
-#include "Component.h"
 
 class EntityManager {
 private:
@@ -20,10 +20,11 @@ public:
     void ClearData();
     void Update(float deltaTime);
     void Render();
-    bool HasNoEntities();
-    Entity& AddEntity(std::string entityName);
+    bool HasNoEntities() const;
+    unsigned int GetEntityCount() const;
+    void ListAllEntities() const;
     std::vector<Entity*> GetEntities() const;
-    unsigned int GetEntityCount();
+    Entity& AddEntity(std::string entityName);
 };
 
-#endif /* EntityManager_hpp */
+#endif

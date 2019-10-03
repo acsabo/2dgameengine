@@ -1,5 +1,5 @@
 //
-//  Component.hpp
+//  Component.h
 //  2dgameengine
 //
 //  Created by Adriano Sabo on 01/10/19.
@@ -20,4 +20,5 @@ public:
     virtual void Render() {}
 };
 
-#endif /* Component_hpp */
+#endif
+
