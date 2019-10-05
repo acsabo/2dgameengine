@@ -7,7 +7,7 @@
 
 class EntityManager {
     private:
-        std::vector<Entity*> entities;        
+        std::vector<Entity*> entities;
     public:
         void ClearData();
         void Update(float deltaTime);
@@ -16,7 +16,8 @@ class EntityManager {
         unsigned int GetEntityCount() const;
         void ListAllEntities() const;
         std::vector<Entity*> GetEntities() const;
-        Entity& AddEntity(std::string entityName);
+        std::vector<Entity*> GetEntitiesByLayer(LayerType layer) const;
+        Entity& AddEntity(std::string entityName, LayerType layer);
 };
 
 #endif

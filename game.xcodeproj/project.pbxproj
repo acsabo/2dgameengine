@@ -18,6 +18,8 @@
 		3151DA632342E0680017F17E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA622342E0680017F17E /* Makefile */; };
 		3151DA662342E7D10017F17E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA642342E7D10017F17E /* Game.cpp */; };
 		31860A0A2345811C001A1CCA /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31860A082345811C001A1CCA /* TextureManager.cpp */; };
+		31E8D8F923492E410076D89E /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31E8D8F723492E410076D89E /* Animation.cpp */; };
+		31E8D8FD23495C640076D89E /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31E8D8FC23495C640076D89E /* Map.cpp */; };
 		31FA91E32345880B003A7886 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FA91E12345880B003A7886 /* AssetManager.cpp */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +60,15 @@
 		3151DA672342E84B0017F17E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		31860A082345811C001A1CCA /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
 		31860A092345811C001A1CCA /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		31E8D8F623492D790076D89E /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteComponent.h; sourceTree = "<group>"; };
+		31E8D8F723492E410076D89E /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
+		31E8D8F823492E410076D89E /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		31E8D8FA2349349D0076D89E /* KeyboardControlComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardControlComponent.h; sourceTree = "<group>"; };
+		31E8D8FB23495C640076D89E /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		31E8D8FC23495C640076D89E /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		31E8D8FE23495D150076D89E /* TileComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TileComponent.h; sourceTree = "<group>"; };
 		31FA91E12345880B003A7886 /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		31FA91E22345880B003A7886 /* AssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetManager.h; sourceTree = "<group>"; };
-		31FA91E423458EF3003A7886 /* SpriteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteComponent.h; sourceTree = "<group>"; };
 		31FA91E52345A098003A7886 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,8 +108,10 @@
 		3120B97E234434CB0013F4D8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				31E8D8FA2349349D0076D89E /* KeyboardControlComponent.h */,
+				31E8D8F623492D790076D89E /* SpriteComponent.h */,
 				3120B980234434E40013F4D8 /* TransformComponent.h */,
-				31FA91E423458EF3003A7886 /* SpriteComponent.h */,
+				31E8D8FE23495D150076D89E /* TileComponent.h */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -128,6 +138,10 @@
 		3151DA5A2342DEC60017F17E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				31E8D8FC23495C640076D89E /* Map.cpp */,
+				31E8D8FB23495C640076D89E /* Map.h */,
+				31E8D8F723492E410076D89E /* Animation.cpp */,
+				31E8D8F823492E410076D89E /* Animation.h */,
 				3120B97E234434CB0013F4D8 /* Components */,
 				3151DA5B2342DEC60017F17E /* main.cpp */,
 				3151DA642342E7D10017F17E /* Game.cpp */,
@@ -205,9 +219,11 @@
 				31FA91E32345880B003A7886 /* AssetManager.cpp in Sources */,
 				3120B977234426BC0013F4D8 /* Entity.cpp in Sources */,
 				3151DA662342E7D10017F17E /* Game.cpp in Sources */,
+				31E8D8FD23495C640076D89E /* Map.cpp in Sources */,
 				3151DA632342E0680017F17E /* Makefile in Sources */,
 				3120B97A234426ED0013F4D8 /* EntityManager.cpp in Sources */,
 				3151DA5C2342DEC60017F17E /* main.cpp in Sources */,
+				31E8D8F923492E410076D89E /* Animation.cpp in Sources */,
 				31860A0A2345811C001A1CCA /* TextureManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

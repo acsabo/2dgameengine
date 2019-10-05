@@ -1,5 +1,4 @@
-dependencies: /Users/adrianosabo/2dgameengine/src/Game.cpp \
-  /Users/adrianosabo/2dgameengine/src/./Constants.h \
+dependencies: /Users/adrianosabo/2dgameengine/src/Map.cpp \
   /Users/adrianosabo/2dgameengine/src/./Game.h \
   /usr/local/opt/sdl2/include/SDL2/SDL.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_main.h \
@@ -49,13 +48,14 @@ dependencies: /Users/adrianosabo/2dgameengine/src/Game.cpp \
   /usr/local/opt/sdl2_image/include/SDL2/SDL_image.h \
   /usr/local/opt/sdl2_ttf/include/SDL2/SDL_ttf.h \
   /Users/adrianosabo/2dgameengine/src/./Entity.h \
+  /Users/adrianosabo/2dgameengine/src/./Constants.h \
   /Users/adrianosabo/2dgameengine/src/./EntityManager.h \
   /Users/adrianosabo/2dgameengine/src/./Component.h \
-  /Users/adrianosabo/2dgameengine/src/./AssetManager.h \
-  /Users/adrianosabo/2dgameengine/src/./TextureManager.h \
   /Users/adrianosabo/2dgameengine/src/./Map.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/TransformComponent.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/TileComponent.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../EntityManager.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/../AssetManager.h \
+  /Users/adrianosabo/2dgameengine/src/./TextureManager.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/glm.hpp \
   /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/detail/_fixes.hpp \
   /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/detail/setup.hpp \
@@ -196,13 +196,4 @@ dependencies: /Users/adrianosabo/2dgameengine/src/Game.cpp \
   /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/matrix.hpp \
   /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/vector_relational.hpp \
   /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/integer.hpp \
-  /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/detail/func_integer.inl \
-  /Users/adrianosabo/2dgameengine/src/./Components/../Game.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/SpriteComponent.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/../TextureManager.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/../AssetManager.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/../Animation.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/KeyboardControlComponent.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/../Components/TransformComponent.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/../Components/SpriteComponent.h \
-  /Users/adrianosabo/2dgameengine/src/../lib/glm/glm.hpp
+  /Users/adrianosabo/2dgameengine/src/./Components/../../lib/glm/detail/func_integer.inl
