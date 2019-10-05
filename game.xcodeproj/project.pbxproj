@@ -50,7 +50,7 @@
 		3120B979234426ED0013F4D8 /* EntityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
 		3120B97C234428080013F4D8 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
 		3120B980234434E40013F4D8 /* TransformComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformComponent.h; sourceTree = "<group>"; };
-		3151DA582342DEC60017F17E /* 2dgameengine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2dgameengine; sourceTree = BUILT_PRODUCTS_DIR; };
+		3151DA582342DEC60017F17E /* game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = game; sourceTree = BUILT_PRODUCTS_DIR; };
 		3151DA5B2342DEC60017F17E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3151DA622342E0680017F17E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		3151DA642342E7D10017F17E /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		3151DA592342DEC60017F17E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3151DA582342DEC60017F17E /* 2dgameengine */,
+				3151DA582342DEC60017F17E /* game */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3151DA572342DEC60017F17E /* 2dgameengine */ = {
+		3151DA572342DEC60017F17E /* game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3151DA5F2342DEC60017F17E /* Build configuration list for PBXNativeTarget "2dgameengine" */;
+			buildConfigurationList = 3151DA5F2342DEC60017F17E /* Build configuration list for PBXNativeTarget "game" */;
 			buildPhases = (
 				3151DA542342DEC60017F17E /* Sources */,
 				3151DA552342DEC60017F17E /* Frameworks */,
@@ -161,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = 2dgameengine;
+			name = game;
 			productName = 2dgameengine;
-			productReference = 3151DA582342DEC60017F17E /* 2dgameengine */;
+			productReference = 3151DA582342DEC60017F17E /* game */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3151DA532342DEC60017F17E /* Build configuration list for PBXProject "2dgameengine" */;
+			buildConfigurationList = 3151DA532342DEC60017F17E /* Build configuration list for PBXProject "game" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -192,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3151DA572342DEC60017F17E /* 2dgameengine */,
+				3151DA572342DEC60017F17E /* game */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3151DA532342DEC60017F17E /* Build configuration list for PBXProject "2dgameengine" */ = {
+		3151DA532342DEC60017F17E /* Build configuration list for PBXProject "game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3151DA5D2342DEC60017F17E /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3151DA5F2342DEC60017F17E /* Build configuration list for PBXNativeTarget "2dgameengine" */ = {
+		3151DA5F2342DEC60017F17E /* Build configuration list for PBXNativeTarget "game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3151DA602342DEC60017F17E /* Debug */,

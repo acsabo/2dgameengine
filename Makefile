@@ -1,7 +1,7 @@
 build:
 	g++ -w -std=c++14 -Wfatal-errors \
 	./src/*.cpp \
-	-o game \
+	-o"./Build/Debug/game" \
 	-I"./lib/lua" \
 	-L"./lib/lua" \
 	-llua \
@@ -11,7 +11,8 @@ build:
 	-lSDL2_mixer;
 
 clean:
-	rm ./game;
+	rm ./Build/Debug/game;
 
 run:
-	./game;
+	./Build/Debug/game;
+
