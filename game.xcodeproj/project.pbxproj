@@ -18,6 +18,8 @@
 		3151DA632342E0680017F17E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA622342E0680017F17E /* Makefile */; };
 		3151DA662342E7D10017F17E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3151DA642342E7D10017F17E /* Game.cpp */; };
 		31860A0A2345811C001A1CCA /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31860A082345811C001A1CCA /* TextureManager.cpp */; };
+		31D032DE234A7C8D0022D8AA /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31D032DA234A7C8C0022D8AA /* FontManager.cpp */; };
+		31D032DF234A7C8D0022D8AA /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31D032DD234A7C8D0022D8AA /* Collision.cpp */; };
 		31E8D8F923492E410076D89E /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31E8D8F723492E410076D89E /* Animation.cpp */; };
 		31E8D8FD23495C640076D89E /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31E8D8FC23495C640076D89E /* Map.cpp */; };
 		31FA91E32345880B003A7886 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FA91E12345880B003A7886 /* AssetManager.cpp */; };
@@ -60,6 +62,11 @@
 		3151DA672342E84B0017F17E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		31860A082345811C001A1CCA /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
 		31860A092345811C001A1CCA /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		31D032D9234A43BA0022D8AA /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		31D032DA234A7C8C0022D8AA /* FontManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FontManager.cpp; sourceTree = "<group>"; };
+		31D032DB234A7C8C0022D8AA /* Collision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collision.h; sourceTree = "<group>"; };
+		31D032DC234A7C8D0022D8AA /* FontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		31D032DD234A7C8D0022D8AA /* Collision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collision.cpp; sourceTree = "<group>"; };
 		31E8D8F623492D790076D89E /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteComponent.h; sourceTree = "<group>"; };
 		31E8D8F723492E410076D89E /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
 		31E8D8F823492E410076D89E /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
@@ -119,6 +126,7 @@
 		3151DA4F2342DEC60017F17E = {
 			isa = PBXGroup;
 			children = (
+				31D032D9234A43BA0022D8AA /* lib */,
 				31FA91E52345A098003A7886 /* assets */,
 				3151DA622342E0680017F17E /* Makefile */,
 				3151DA5A2342DEC60017F17E /* src */,
@@ -138,6 +146,10 @@
 		3151DA5A2342DEC60017F17E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				31D032DD234A7C8D0022D8AA /* Collision.cpp */,
+				31D032DB234A7C8C0022D8AA /* Collision.h */,
+				31D032DA234A7C8C0022D8AA /* FontManager.cpp */,
+				31D032DC234A7C8D0022D8AA /* FontManager.h */,
 				31E8D8FC23495C640076D89E /* Map.cpp */,
 				31E8D8FB23495C640076D89E /* Map.h */,
 				31E8D8F723492E410076D89E /* Animation.cpp */,
@@ -216,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D032DF234A7C8D0022D8AA /* Collision.cpp in Sources */,
 				31FA91E32345880B003A7886 /* AssetManager.cpp in Sources */,
 				3120B977234426BC0013F4D8 /* Entity.cpp in Sources */,
+				31D032DE234A7C8D0022D8AA /* FontManager.cpp in Sources */,
 				3151DA662342E7D10017F17E /* Game.cpp in Sources */,
 				31E8D8FD23495C640076D89E /* Map.cpp in Sources */,
 				3151DA632342E0680017F17E /* Makefile in Sources */,

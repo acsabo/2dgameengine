@@ -1,5 +1,5 @@
-dependencies: /Users/adrianosabo/2dgameengine/src/main.cpp \
-  /Users/adrianosabo/2dgameengine/src/./Constants.h \
+dependencies: /Users/adrianosabo/2dgameengine/src/Collision.cpp \
+  /Users/adrianosabo/2dgameengine/src/./Collision.h \
   /usr/local/opt/sdl2/include/SDL2/SDL.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_main.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_stdinc.h \
@@ -44,16 +44,4 @@ dependencies: /Users/adrianosabo/2dgameengine/src/main.cpp \
   /usr/local/opt/sdl2/include/SDL2/SDL_shape.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_system.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_timer.h \
-  /usr/local/opt/sdl2/include/SDL2/SDL_version.h \
-  /Users/adrianosabo/2dgameengine/src/./Game.h \
-  /usr/local/opt/sdl2_image/include/SDL2/SDL_image.h \
-  /usr/local/opt/sdl2_ttf/include/SDL2/SDL_ttf.h \
-  /Users/adrianosabo/2dgameengine/src/../lib/lua/sol.hpp \
-  /Users/adrianosabo/2dgameengine/src/../lib/lua/lua.hpp \
-  /Users/adrianosabo/2dgameengine/src/../lib/lua/lua.h \
-  /Users/adrianosabo/2dgameengine/src/../lib/lua/luaconf.h \
-  /Users/adrianosabo/2dgameengine/src/../lib/lua/lualib.h \
-  /Users/adrianosabo/2dgameengine/src/../lib/lua/lauxlib.h \
-  /Users/adrianosabo/2dgameengine/src/./Entity.h \
-  /Users/adrianosabo/2dgameengine/src/./EntityManager.h \
-  /Users/adrianosabo/2dgameengine/src/./Component.h
+  /usr/local/opt/sdl2/include/SDL2/SDL_version.h

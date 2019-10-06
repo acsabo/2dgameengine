@@ -1,6 +1,5 @@
 dependencies: /Users/adrianosabo/2dgameengine/src/Game.cpp \
   /Users/adrianosabo/2dgameengine/src/./Constants.h \
-  /Users/adrianosabo/2dgameengine/src/./Game.h \
   /usr/local/opt/sdl2/include/SDL2/SDL.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_main.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_stdinc.h \
@@ -46,13 +45,21 @@ dependencies: /Users/adrianosabo/2dgameengine/src/Game.cpp \
   /usr/local/opt/sdl2/include/SDL2/SDL_system.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_timer.h \
   /usr/local/opt/sdl2/include/SDL2/SDL_version.h \
+  /Users/adrianosabo/2dgameengine/src/./Game.h \
   /usr/local/opt/sdl2_image/include/SDL2/SDL_image.h \
   /usr/local/opt/sdl2_ttf/include/SDL2/SDL_ttf.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/sol.hpp \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lua.hpp \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lua.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/luaconf.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lualib.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lauxlib.h \
   /Users/adrianosabo/2dgameengine/src/./Entity.h \
   /Users/adrianosabo/2dgameengine/src/./EntityManager.h \
   /Users/adrianosabo/2dgameengine/src/./Component.h \
   /Users/adrianosabo/2dgameengine/src/./AssetManager.h \
   /Users/adrianosabo/2dgameengine/src/./TextureManager.h \
+  /Users/adrianosabo/2dgameengine/src/./FontManager.h \
   /Users/adrianosabo/2dgameengine/src/./Map.h \
   /Users/adrianosabo/2dgameengine/src/./Components/TransformComponent.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../EntityManager.h \
@@ -202,7 +209,11 @@ dependencies: /Users/adrianosabo/2dgameengine/src/Game.cpp \
   /Users/adrianosabo/2dgameengine/src/./Components/../TextureManager.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../AssetManager.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../Animation.h \
-  /Users/adrianosabo/2dgameengine/src/./Components/KeyboardControlComponent.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/ColliderComponent.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../Components/TransformComponent.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/KeyboardControlComponent.h \
   /Users/adrianosabo/2dgameengine/src/./Components/../Components/SpriteComponent.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/TextLabelComponent.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/../FontManager.h \
+  /Users/adrianosabo/2dgameengine/src/./Components/ProjectileEmitterComponent.h \
   /Users/adrianosabo/2dgameengine/src/../lib/glm/glm.hpp

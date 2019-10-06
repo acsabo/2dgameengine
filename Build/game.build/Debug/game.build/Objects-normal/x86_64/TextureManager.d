@@ -48,6 +48,12 @@ dependencies: /Users/adrianosabo/2dgameengine/src/TextureManager.cpp \
   /usr/local/opt/sdl2/include/SDL2/SDL_version.h \
   /usr/local/opt/sdl2_image/include/SDL2/SDL_image.h \
   /usr/local/opt/sdl2_ttf/include/SDL2/SDL_ttf.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/sol.hpp \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lua.hpp \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lua.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/luaconf.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lualib.h \
+  /Users/adrianosabo/2dgameengine/src/../lib/lua/lauxlib.h \
   /Users/adrianosabo/2dgameengine/src/./Entity.h \
   /Users/adrianosabo/2dgameengine/src/./Constants.h \
   /Users/adrianosabo/2dgameengine/src/./EntityManager.h \
