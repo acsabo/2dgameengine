@@ -11,6 +11,10 @@
 #include "./Components/ProjectileEmitterComponent.h"
 #include "../lib/glm/glm.hpp"
 
+bool show_demo_window = true;
+bool show_another_window = false;
+ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+
 EntityManager manager;
 AssetManager* Game::assetManager = new AssetManager(&manager);
 SDL_Renderer* Game::renderer;
@@ -32,36 +36,35 @@ bool Game::IsRunning() const {
 }
 
 void Game::Initialize(int width, int height) {
-    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-        std::cerr << "Error initializing SDL." << std::endl;
-        return;
-    }
+     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) != 0) {
+	          std::cerr << "Error initializing SDL." << std::endl;
+	               return;
+	         }
     if (TTF_Init() != 0) {
-        std::cerr << "Error initializing SDL TTF" << std::endl;
-        return;
-    }
-    window = SDL_CreateWindow(
-        NULL,
-        SDL_WINDOWPOS_CENTERED,
-        SDL_WINDOWPOS_CENTERED,
-        width,
-        height,
-        SDL_WINDOW_BORDERLESS
-    );
-    if (!window) {
-        std::cerr << "Error creating SDL window." << std::endl;
-        return;
-    }
-    renderer = SDL_CreateRenderer(window, -1, 0);
-    if (!renderer) {
-        std::cerr << "Error creating SDL renderer." << std::endl;
-        return;
+               std::cerr << "Error initializing SDL TTF" << std::endl;
+           return;
     }
 
-    LoadLevel(1);
+	window = SDL_CreateWindow("SDL2 ImGui Renderer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_RESIZABLE);
 
+	if (!window) {
+			std::cerr << "Error creating SDL window." << std::endl;
+				return;
+				}
+
+	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+	if (!renderer) {
+			std::cerr << "Error creating SDL renderer." << std::endl;
+				return;
+				}
+
+	ImGui::CreateContext();
+	ImGuiSDL::Initialize(renderer, width, height);
+	
+	LoadLevel(1);
     isRunning = true;
-    return;
+    return;    
 }
 
 void Game::LoadLevel(int levelNumber) {
@@ -280,16 +283,60 @@ void Game::Update() {
 }
 
 void Game::Render() {
-    SDL_SetRenderDrawColor(renderer, 21, 21, 21, 255);
-    SDL_RenderClear(renderer);
+	ImGuiIO& io = ImGui::GetIO();
+
+	int wheel = 0;
+
+	SDL_Event e;
+	while (SDL_PollEvent(&e))
+		{
+		if (e.type == SDL_WINDOWEVENT)
+		{
+			if (e.window.event == SDL_WINDOWEVENT_SIZE_CHANGED)
+				{
+						io.DisplaySize.x = static_cast<float>(e.window.data1);
+							io.DisplaySize.y = static_cast<float>(e.window.data2);
+							}
+		}
+		else if (e.type == SDL_MOUSEWHEEL)
+			{
+					wheel = e.wheel.y;
+					}
+	}
+
+	int mouseX, mouseY;
+	const int buttons = SDL_GetMouseState(&mouseX, &mouseY);
+	io.DeltaTime = 1.0f / 60.0f;
+	io.MousePos = ImVec2(static_cast<float>(mouseX), static_cast<float>(mouseY));
+	io.MouseDown[0] = buttons & SDL_BUTTON(SDL_BUTTON_LEFT);
+	io.MouseDown[1] = buttons & SDL_BUTTON(SDL_BUTTON_RIGHT);
+	io.MouseWheel = static_cast<float>(wheel);
+
+	SDL_Rect vp;
+	vp.x = vp.y = 0;
+	vp.w = (int)ImGui::GetIO().DisplaySize.x;
+	vp.h = (int)ImGui::GetIO().DisplaySize.y;
+	SDL_RenderSetViewport(renderer, &vp);
+	SDL_SetRenderDrawColor(renderer, clear_color.x * 255.0f, clear_color.y * 255.0f, clear_color.z * 255.0f, clear_color.w * 255.0f);
+	SDL_RenderClear(renderer);
+
+	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 
     if (manager.HasNoEntities()) {
-        return;
+            return;
     }
 
     manager.Render();
 
-    SDL_RenderPresent(renderer);
+	ImGui::NewFrame();
+    	ImGui::Begin("Hello, world!");
+	ImGui::End();
+	
+	ImGui::Render();
+	ImGuiSDL::Render(ImGui::GetDrawData());
+
+	SDL_RenderPresent(renderer);
+
 }
 
 void Game::HandleCameraMovement() {

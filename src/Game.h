@@ -9,12 +9,16 @@
 #include "./Component.h"
 #include "./EntityManager.h"
 
+#include "imgui.h"
+#include "imgui_sdl.h"
+
 class AssetManager;
 
 class Game {
     private:
         bool isRunning;
         SDL_Window *window;
+	ImGuiIO *io;
     public:
         Game();
         ~Game();
