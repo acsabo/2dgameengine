@@ -1,16 +1,17 @@
 build:
-	em++ -g -std=c++17 ./src/*.cpp \
-	-I"./src" ./web/lua-5.3.5/src/lua.bc \
-	-I"./web/imgui" ./web/imgui/build/imgui.bc \
+	em++ -g -std=c++17 ../src/*.cpp \
+	-I"../src" ../web/lua-5.3.5/src/lua.bc \
+	-I"../web/imgui" ../web/imgui/build/imgui.bc \
 	-s USE_SDL=2 -s USE_SDL_IMAGE=2 -s USE_SDL_TTF=2 \
-	-o ./build/game.html \
-	--preload-file ./assets/ \
+	-o ../Build/game.html \
+	--preload-file ../assets/ \
 	-s DISABLE_DEPRECATED_FIND_EVENT_TARGET_BEHAVIOR=1 \
-	--emrun -s SDL2_IMAGE_FORMATS=["png"]
-
+	-s DEMANGLE_SUPPORT=1 \
+	--emrun -s SDL2_IMAGE_FORMATS=["png"] \
+	-D_emscripten
 clean:
-	rm ./build/*
+	rm -R ../Build/*
 
 run:
-	emrun --no_browser --port 8080 ./build/game.html
+	emrun --no_browser --port 8080 ../Build/game.html
 
