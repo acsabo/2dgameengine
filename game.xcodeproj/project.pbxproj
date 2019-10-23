@@ -23,6 +23,11 @@
 		31E8D8F923492E410076D89E /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31E8D8F723492E410076D89E /* Animation.cpp */; };
 		31E8D8FD23495C640076D89E /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31E8D8FC23495C640076D89E /* Map.cpp */; };
 		31FA91E32345880B003A7886 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FA91E12345880B003A7886 /* AssetManager.cpp */; };
+		31FDDE00235FD37B009E66F1 /* imgui_sdl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FDDDFE235FD37B009E66F1 /* imgui_sdl.cpp */; };
+		31FDDE0C235FD439009E66F1 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FDDE03235FD438009E66F1 /* imgui_widgets.cpp */; };
+		31FDDE0D235FD439009E66F1 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FDDE07235FD438009E66F1 /* imgui_demo.cpp */; };
+		31FDDE0E235FD439009E66F1 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FDDE09235FD438009E66F1 /* imgui.cpp */; };
+		31FDDE0F235FD439009E66F1 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FDDE0B235FD439009E66F1 /* imgui_draw.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +82,18 @@
 		31FA91E12345880B003A7886 /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		31FA91E22345880B003A7886 /* AssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetManager.h; sourceTree = "<group>"; };
 		31FA91E52345A098003A7886 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		31FDDDFE235FD37B009E66F1 /* imgui_sdl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_sdl.cpp; sourceTree = "<group>"; };
+		31FDDDFF235FD37B009E66F1 /* imgui_sdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_sdl.h; sourceTree = "<group>"; };
+		31FDDE02235FD438009E66F1 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = web/imgui/imconfig.h; sourceTree = SOURCE_ROOT; };
+		31FDDE03235FD438009E66F1 /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = web/imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		31FDDE04235FD438009E66F1 /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imstb_truetype.h; path = web/imgui/imstb_truetype.h; sourceTree = SOURCE_ROOT; };
+		31FDDE05235FD438009E66F1 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_internal.h; path = web/imgui/imgui_internal.h; sourceTree = SOURCE_ROOT; };
+		31FDDE06235FD438009E66F1 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui.h; path = web/imgui/imgui.h; sourceTree = SOURCE_ROOT; };
+		31FDDE07235FD438009E66F1 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = web/imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		31FDDE08235FD438009E66F1 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imstb_textedit.h; path = web/imgui/imstb_textedit.h; sourceTree = SOURCE_ROOT; };
+		31FDDE09235FD438009E66F1 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = web/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		31FDDE0A235FD438009E66F1 /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imstb_rectpack.h; path = web/imgui/imstb_rectpack.h; sourceTree = SOURCE_ROOT; };
+		31FDDE0B235FD439009E66F1 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = web/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +143,7 @@
 		3151DA4F2342DEC60017F17E = {
 			isa = PBXGroup;
 			children = (
+				31FDDE01235FD40D009E66F1 /* imgui */,
 				31D032D9234A43BA0022D8AA /* lib */,
 				31FA91E52345A098003A7886 /* assets */,
 				3151DA622342E0680017F17E /* Makefile */,
@@ -146,6 +164,8 @@
 		3151DA5A2342DEC60017F17E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				31FDDDFE235FD37B009E66F1 /* imgui_sdl.cpp */,
+				31FDDDFF235FD37B009E66F1 /* imgui_sdl.h */,
 				31D032DD234A7C8D0022D8AA /* Collision.cpp */,
 				31D032DB234A7C8C0022D8AA /* Collision.h */,
 				31D032DA234A7C8C0022D8AA /* FontManager.cpp */,
@@ -170,6 +190,23 @@
 				31FA91E22345880B003A7886 /* AssetManager.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		31FDDE01235FD40D009E66F1 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				31FDDE02235FD438009E66F1 /* imconfig.h */,
+				31FDDE07235FD438009E66F1 /* imgui_demo.cpp */,
+				31FDDE0B235FD439009E66F1 /* imgui_draw.cpp */,
+				31FDDE05235FD438009E66F1 /* imgui_internal.h */,
+				31FDDE03235FD438009E66F1 /* imgui_widgets.cpp */,
+				31FDDE09235FD438009E66F1 /* imgui.cpp */,
+				31FDDE06235FD438009E66F1 /* imgui.h */,
+				31FDDE0A235FD438009E66F1 /* imstb_rectpack.h */,
+				31FDDE08235FD438009E66F1 /* imstb_textedit.h */,
+				31FDDE04235FD438009E66F1 /* imstb_truetype.h */,
+			);
+			path = imgui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,14 +268,19 @@
 				31D032DF234A7C8D0022D8AA /* Collision.cpp in Sources */,
 				31FA91E32345880B003A7886 /* AssetManager.cpp in Sources */,
 				3120B977234426BC0013F4D8 /* Entity.cpp in Sources */,
+				31FDDE00235FD37B009E66F1 /* imgui_sdl.cpp in Sources */,
 				31D032DE234A7C8D0022D8AA /* FontManager.cpp in Sources */,
 				3151DA662342E7D10017F17E /* Game.cpp in Sources */,
 				31E8D8FD23495C640076D89E /* Map.cpp in Sources */,
+				31FDDE0F235FD439009E66F1 /* imgui_draw.cpp in Sources */,
 				3151DA632342E0680017F17E /* Makefile in Sources */,
+				31FDDE0C235FD439009E66F1 /* imgui_widgets.cpp in Sources */,
 				3120B97A234426ED0013F4D8 /* EntityManager.cpp in Sources */,
 				3151DA5C2342DEC60017F17E /* main.cpp in Sources */,
 				31E8D8F923492E410076D89E /* Animation.cpp in Sources */,
+				31FDDE0D235FD439009E66F1 /* imgui_demo.cpp in Sources */,
 				31860A0A2345811C001A1CCA /* TextureManager.cpp in Sources */,
+				31FDDE0E235FD439009E66F1 /* imgui.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./web/imgui/ \t\t";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -349,6 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./web/imgui/;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

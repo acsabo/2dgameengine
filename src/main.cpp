@@ -1,4 +1,8 @@
+
+#ifdef _emscripten
 #include <emscripten.h>
+#endif
+
 #include <iostream>
 #include "./Constants.h"
 #include "./Game.h"
@@ -13,17 +17,20 @@ void callRender() {
 }
 
 int main(int argc, char *args[]) {
-    //Game *game = new Game();
+    #ifdef _emscripten
     emscripten_set_main_loop(callRender, 0, 0);
+    #endif
+
     game->Initialize(WINDOW_WIDTH, WINDOW_HEIGHT);
-
-//    while (game->IsRunning()) {
-//        game->ProcessInput();
-//        game->Update();
-        //game->Render();
- //   }
-
-   // game->Destroy();
-
+    
+    #ifndef _emscripten
+    while (game->IsRunning()) {
+        game->ProcessInput();
+        game->Update();
+        game->Render();
+    }
+    game->Destroy();
+    #endif
+    
     return 1;
 }
